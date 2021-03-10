@@ -8,11 +8,12 @@ export default {
   name: 'Button',
   props: {
     text: String,
-    color: String
+    color: String,
+    showAddTask: Boolean
   },
   methods: {
     onClick() {
-      console.log('click');
+      this.$emit('btn-click')
     }
 
   }
