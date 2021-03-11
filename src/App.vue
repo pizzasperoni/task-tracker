@@ -5,6 +5,12 @@
       <AddTask @add-task="addTask" />
     </div>
     <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    <div class="credits">
+      <a href="https://github.com/pizzasperoni/task-tracker" target="_blank">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+    </div>
   </div>
 
 </template>
@@ -110,5 +116,8 @@ export default {
 }
 .btn:focus {
   outline: none;
+}
+.credits {
+  margin-top: 30px;
 }
 </style>
